@@ -1,0 +1,24 @@
+filme
+ * nome
+ * gênero
+ * direção (chave estrangeira)
+ * votos
+ * ano de produção
+ * posição no ranking
+
+Diretor
+ * pessoa (chave estrangeira)
+
+Pessoa
+ * nome
+ * sexo
+
+Ator
+ * pessoa (chave estrangeira)
+
+Papel
+ * nome
+ * tipo
+ * ator (chave estrangeira)
+ * filme (chave estrangeira)
+
