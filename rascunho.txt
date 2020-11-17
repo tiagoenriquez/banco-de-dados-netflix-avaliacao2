@@ -1,7 +1,7 @@
 filme
  * nome
  * gênero
- * direção (chave estrangeira)
+ * diretor (chave estrangeira)
  * votos
  * ano de produção
  * posição no ranking
