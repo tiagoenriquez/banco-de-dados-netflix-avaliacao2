@@ -1,6 +1,5 @@
-filme
+Filme
  * nome
- * gênero
  * diretor (chave estrangeira)
  * votos
  * ano de produção
@@ -22,3 +21,9 @@ Papel
  * ator (chave estrangeira)
  * filme (chave estrangeira)
 
+ Gênero
+ * nome
+
+ Filme_Gênero
+ * filme (chave estrangeira)
+ * gênero (chave estrangeira)
