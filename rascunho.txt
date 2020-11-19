@@ -21,9 +21,9 @@ Papel
  * ator (chave estrangeira)
  * filme (chave estrangeira)
 
- Gênero
+Gênero
  * nome
 
- Filme_Gênero
+Filme_Gênero
  * filme (chave estrangeira)
  * gênero (chave estrangeira)
