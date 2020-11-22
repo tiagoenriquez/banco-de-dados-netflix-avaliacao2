@@ -4,7 +4,7 @@ use netflix;
 
 create table pessoa(
 	id int not null auto_increment primary key,
-	nome varchar (200) not null,
+	nome varchar (200) unique not null,
 	sexo varchar (1) not null
 );
 
