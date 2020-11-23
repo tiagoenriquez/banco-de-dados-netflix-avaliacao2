@@ -1,0 +1,134 @@
+Filme: Se beber, não case!
+Ano: 2009
+Diretor: Todd Phillips
+Gênero: comédia
+Atores: 
+ * Bradley Cooper
+   Personagem: Phil Wenneck
+   Tipo: professor
+ * Ed Helms
+   Personagem: Stu price
+   Tipo: dentista
+ * Zach Galifianakais
+   Personagem: Alan Garner
+   Tipo: amigo de personagem
+
+Filme: Se beber, não case! Parte 2
+Ano: 2011
+Diretor: Todd Phillips
+Gênero: comédia
+Atores: 
+ * Bradley Cooper
+   Personagem: Phil Wenneck
+   Tipo: professor
+ * Ed Helms
+   Personagem: Stu price
+   Tipo: dentista
+ * Zach Galifianakais
+   Personagem: Alan Garner
+   Tipo: amigo de personagem
+
+Filme: Se beber, não case! Parte 3
+Ano: 2013
+Diretor: Todd Phillips
+Gênero: comédia
+Atores: 
+ * Bradley Cooper
+   Personagem: Phil Wenneck
+   Tipo: professor
+ * Ed Helms
+   Personagem: Stu price
+   Tipo: dentista
+ * Zach Galifianakais
+   Personagem: Alan Garner
+   Tipo: amigo de personagem
+
+Cães de aluguel
+Ano: 1993
+Diretor: Quentin Tarantino
+Gênero: crime
+Atores: 
+ * Harvey Keitel
+   Personagem: Mr. White
+   Tipo: -
+ * Tim Roth
+   Personagem: Mr. Orange
+   Tipo: -
+ * Michael Madsen
+   Personagem: Mr. Blonde
+   Tipo: -
+
+A balada do pistoleiro
+Ano: 1995
+Diretor: Robert Rodriguez
+Gênero: ação, crime
+Atores: 
+ * Antonio Bandeiras
+   Personagem: El Mariachi
+   Tipo: -
+ * Salma Hayek
+   Personagem: Carolina
+   Tipo: -
+ * Quentin Tarantino
+   Personagem: Pick-Up-Guy
+   Tipo: -
+
+Planeta Terror
+Ano: 2007
+Diretor: Robert Rodriguez
+Gênero: terror, ação
+Atores: 
+ * Rose McGowan
+   Personagem: Cherry Darling
+   Tipo: -
+ * Freddy Rodríguez
+   Personagem: El Wray
+   Tipo: -
+ * Quentin Tarantino
+   Personagem: The Rapist
+   Tipo: -
+
+Tempo de violência
+Ano: 1995
+Diretor: Quentin Tarantino
+Gênero: crime
+Atores: 
+ * John Travolta
+   Personagem: Vincent Vega
+   Tipo: -
+ * Samuel L. Jackson
+   Personagem: Jules Winnfield
+   Tipo: -
+ * Uma Thurman
+   Personagem: Mia Wallace
+   Tipo: -
+
+S.W.A.T
+Ano: 2017
+Diretor: Aaron Rahsaan Thomas
+Gênero: crime, drama
+Atores: 
+ * Shemar Moore
+   Personagem: Daniel Hondo Harrelson
+   Tipo: -
+ * Alex Russell
+   Personagem: Jim Street
+   Tipo: -
+ * Jay Harrington
+   Personagem: David Deacon Kay
+   Tipo: -
+
+O gambito da rainha
+Ano: 2020
+Diretor: Scott Frank
+Gênero: drama
+Atores: 
+ * Anya Taylor-Joy
+   Personagem: Beth Harmon
+   Tipo: -
+ * Bill Camp
+   Personagem: Mr. Shaibel
+   Tipo: -
+ * Thomas Brodie-Sangster
+   Personagem: Benny Watts
+   Tipo: -
