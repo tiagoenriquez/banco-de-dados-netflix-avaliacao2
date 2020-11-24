@@ -214,3 +214,14 @@ call inserir_papel("Beth Harmon", "", "Anya Taylor-Joy", "O gambito da rainha");
 call inserir_papel("Mr. Shaibel", "", "Bill Camp", "O gambito da rainha");
 call inserir_papel("Benny Watts", "", "Brodie-Sangster", "O gambito da rainha");
 call atribuir_genero_a_filme("drama", "O gambito da rainha");
+
+call inserir_diretor("Todd Phillips", "M");
+call inserir_ator("Joaquin Phoennix", "M");
+call inserir_ator("Robert de Niro", "M");
+call inserir_ator("Zazie Beets", "F");
+call inserir_filme("Coringa", 2019, "Todd Phillips");
+call inserir_papel("Arthur Fleck", "", "Joaquin Phoennix", "Coringa");
+call inserir_papel("Murray Franklin", "", "Robert de Niro", "Coringa");
+call inserir_papel("Sophie Dumond", "", "Zazie Beets", "Coringa");
+call atribuir_genero_a_filme("crime", "Coringa");
+call atribuir_genero_a_filme("drama", "Coringa");
