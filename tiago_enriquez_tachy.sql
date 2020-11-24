@@ -121,3 +121,96 @@ call inserir_papel("Darling Dear", "", "Kiersey Klemons", "A dama e o vagabundo"
 call atribuir_genero_a_filme("romance", "A dama e o vagabundo");
 call atribuir_genero_a_filme("comédia", "A dama e o vagabundo");
 call atribuir_genero_a_filme("familia", "A dama e o vagabundo");
+
+call inserir_diretor("Todd Phillips", "M");
+call inserir_ator("Bradley Cooper", "M");
+call inserir_ator("Ed Helms", "M");
+call inserir_ator("Zach Galifianakais", "M");
+call inserir_filme("Se beber, não case!", 2009, "Todd Phillips");
+call inserir_papel("Phil Wenneck", "professor", "Bradley Cooper", "Se beber, não case!");
+call inserir_papel("Stu Price", "dentista", "Ed Helms", "Se beber, não case!");
+call inserir_papel("Alan Garner", "amigo de personagem", "Zach Galifianakais", "Se beber, não case!");
+call atribuir_genero_a_filme("comédia", "Se beber, não case!");
+
+call inserir_diretor("Todd Phillips", "M");
+call inserir_ator("Bradley Cooper", "M");
+call inserir_ator("Ed Helms", "M");
+call inserir_ator("Zach Galifianakais", "M");
+call inserir_filme("Se beber, não case! Parte 2", 2011, "Todd Phillips");
+call inserir_papel("Phil Wenneck", "professor", "Bradley Cooper", "Se beber, não case! Parte 2");
+call inserir_papel("Stu Price", "dentista", "Ed Helms", "Se beber, não case! Parte 2");
+call inserir_papel("Alan Garner", "amigo de personagem", "Zach Galifianakais", "Se beber, não case! Parte 2");
+call atribuir_genero_a_filme("comédia", "Se beber, não case! Parte 2");
+
+call inserir_diretor("Todd Phillips", "M");
+call inserir_ator("Bradley Cooper", "M");
+call inserir_ator("Ed Helms", "M");
+call inserir_ator("Zach Galifianakais", "M");
+call inserir_filme("Se beber, não case! Parte 3", 2013, "Todd Phillips");
+call inserir_papel("Phil Wenneck", "professor", "Bradley Cooper", "Se beber, não case! Parte 3");
+call inserir_papel("Stu Price", "dentista", "Ed Helms", "Se beber, não case! Parte 3");
+call inserir_papel("Alan Garner", "amigo de personagem", "Zach Galifianakais", "Se beber, não case! Parte 3");
+call atribuir_genero_a_filme("comédia", "Se beber, não case! Parte 3");
+
+call inserir_diretor("Quentin Tarantino", "M");
+call inserir_ator("Harvey Keitel", "M");
+call inserir_ator("Tim Roth", "M");
+call inserir_ator("Michael Madsen", "M");
+call inserir_filme("Cães de aluguel", 1993, "Quentin Tarantino");
+call inserir_papel("Phil Wenneck", "", "Harvey Keitel", "Cães de aluguel");
+call inserir_papel("Mr. Orange", "", "Tim Roth", "Cães de aluguel");
+call inserir_papel("Mr. Blonde", "", "Michael Madsen", "Cães de aluguel");
+call atribuir_genero_a_filme("crime", "Cães de aluguel");
+
+call inserir_diretor("Robert Rodriguez", "M");
+call inserir_ator("Antonio Bandeiras", "M");
+call inserir_ator("Salma Hayek", "F");
+call inserir_ator("Quentin Tarantino", "M");
+call inserir_filme("A balada do pistoleiro", 1995, "Robert Rodriguez");
+call inserir_papel("El Mariachi", "", "Antonio Bandeiras", "A balada do pistoleiro");
+call inserir_papel("Carolina", "", "Salma Hayek", "A balada do pistoleiro");
+call inserir_papel("Pick-Up-Guy", "", "Quentin Tarantino", "A balada do pistoleiro");
+call atribuir_genero_a_filme("ação", "A balada do pistoleiro");
+call atribuir_genero_a_filme("crime", "A balada do pistoleiro");
+
+call inserir_diretor("Robert Rodriguez", "M");
+call inserir_ator("Rose McGowan", "F");
+call inserir_ator("Freddy Rodríguez", "M");
+call inserir_ator("Quentin Tarantino", "M");
+call inserir_filme("Planeta Terror", 2007, "Robert Rodriguez");
+call inserir_papel("Cherry Darling", "", "Rose McGowan", "Planeta Terror");
+call inserir_papel("El Wray", "", "Freddy Rodríguez", "Planeta Terror");
+call inserir_papel("The Rapist", "", "Quentin Tarantino", "Planeta Terror");
+call atribuir_genero_a_filme("terror", "Planeta Terror");
+call atribuir_genero_a_filme("ação", "Planeta Terror");
+
+call inserir_diretor("Quentin Tarantino", "M");
+call inserir_ator("John Travolta", "M");
+call inserir_ator("Samuel L. Jackson", "M");
+call inserir_ator("Uma Thurman", "F");
+call inserir_filme("Pulp Fiction: Tempo de violência", 1995, "Quentin Tarantino");
+call inserir_papel("Vincent Vega", "", "John Travolta", "Pulp Fiction: Tempo de violência");
+call inserir_papel("Jules Winnfield", "", "Samuel L. Jackson", "Pulp Fiction: Tempo de violência");
+call inserir_papel("Mia Wallace", "", "Uma Thurman", "Pulp Fiction: Tempo de violência");
+call atribuir_genero_a_filme("crime", "Pulp Fiction: Tempo de violência");
+
+call inserir_diretor("Aaron Rahsaan Thomas", "M");
+call inserir_ator("Shemar Moore", "M");
+call inserir_ator("Alex Russell", "M");
+call inserir_ator("Jay Harrington", "M");
+call inserir_filme("S.W.A.T.", 2017, "Aaron Rahsaan Thomas");
+call inserir_papel("Daniel Hondo Harrelson", "", "Shemar Moore", "S.W.A.T.");
+call inserir_papel("Jim Street", "", "Alex Russell", "S.W.A.T.");
+call inserir_papel("David Deacon Kay", "", "Jay Harrington", "S.W.A.T.");
+call atribuir_genero_a_filme("crime", "S.W.A.T.");
+call atribuir_genero_a_filme("drama", "S.W.A.T.");
+
+call inserir_diretor("Scott Frank", "M");
+call inserir_ator("Anya Taylor-Joy", "F");
+call inserir_ator("Bill Camp", "M");
+call inserir_ator("Brodie-Sangster", "M");
+call inserir_filme("O gambito da rainha", 2020, "Scott Frank");
+call inserir_papel("Beth Harmon", "", "Anya Taylor-Joy", "O gambito da rainha");
+call inserir_papel("Mr. Shaibel", "", "Bill Camp", "O gambito da rainha");
+call inserir_papel("Benny Watts", "", "Brodie-Sangster", "O gambito da rainha");
+call atribuir_genero_a_filme("drama", "O gambito da rainha");
