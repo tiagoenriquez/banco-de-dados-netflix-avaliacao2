@@ -231,3 +231,33 @@ call inserir_papel("Murray Franklin", "", "Robert de Niro", "Coringa");
 call inserir_papel("Sophie Dumond", "", "Zazie Beets", "Coringa");
 call atribuir_genero_a_filme("crime", "Coringa");
 call atribuir_genero_a_filme("drama", "Coringa");
+
+--1ª view
+create view crime as
+	select pessoa.nome as ator from genero_filme
+	inner join genero on genero_filme.genero = genero.id_genero
+	inner join filme on genero_filme.filme = filme.id_filme
+	inner join papel on filme.id_filme = papel.filme
+	inner join ator on papel.ator = ator.id_ator
+	inner join pessoa on ator.pessoa = pessoa.id_pessoa
+	where genero.nome = "crime"...
+
+--3ª view
+create view tarantino as
+	select filme.nome as filme, papel.nome as papel from filme
+	inner join papel on filme.id_filme = papel.filme
+	inner join ator on papel.ator = ator.id_ator
+	inner join pessoa on ator.pessoa = pessoa.id_pessoa
+	where pessoa.nome = "Quentin Tarantino";
+
+--4ª view
+create view se_beber_nao_case as
+	select filme.nome as filme, pessoa.nome as participante, papel.nome as papel, papel.tipo as tipo_papel
+	from filme
+	inner join filme on genero_filme.filme = filme.id_filme
+	inner join papel on filme.id_filme = papel.filme
+	inner join ator on papel.ator = ator.id_ator
+	inner join pessoa on ator.pessoa = pessoa.id_pessoa
+	inner join diretor on pessoa.id_pessoa = diretor.pessoa
+	where filme.nome like "Se beber, não case!%"
+	order by filme.ano_producao asc;
