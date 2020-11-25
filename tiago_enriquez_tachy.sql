@@ -62,7 +62,10 @@ begin
         set @pessoa_nula = last_insert_id();
         insert into ator (pessoa) values (@pessoa_nula);
 	else
-		insert into ator (pessoa) values (@pessoa);
+		set @ator = (select * from (select id_ator from ator where pessoa = @pessoa) as rownum);
+        if @ator is null then
+			insert into ator (pessoa) values (@pessoa);
+		end if;
 	end if;
 end $$
 
@@ -75,15 +78,18 @@ begin
         set @pessoa_nula = last_insert_id();
         insert into diretor (pessoa) values (@pessoa_nula);
 	else
-		insert into diretor (pessoa) values (@pessoa);
+	  	set @diretor = (select * from (select id_diretor from diretor where pessoa = @pessoa) as rownum);
+        if @diretor is null then
+			insert into diretor (pessoa) values (@pessoa);
+		end if;
 	end if;
 end $$
 
 delimiter $$
 create procedure inserir_filme(in nome_entrada varchar (200), in ano_producao_entrada int, in diretor_entrada varchar (200))
 begin
-	set @pessoa = (select * from (select id_pessoa from pessoa where nome = diretor_entrada) as rownum_a);
-	set @diretor = (select * from (select id_diretor from diretor where pessoa = @pessoa) as rownum_b);
+	set @pessoa = (select * from (select id_pessoa from pessoa where nome = diretor_entrada) as rownum);
+	set @diretor = (select * from (select id_diretor from diretor where pessoa = @pessoa) as rownum);
     insert into filme (nome, ano_producao, diretor)
     values (nome_entrada, ano_producao_entrada, @diretor);
 end $$
