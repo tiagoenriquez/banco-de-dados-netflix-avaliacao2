@@ -232,17 +232,32 @@ call inserir_papel("Sophie Dumond", "", "Zazie Beets", "Coringa");
 call atribuir_genero_a_filme("crime", "Coringa");
 call atribuir_genero_a_filme("drama", "Coringa");
 
---1ª view
+-- 1ª view: Liste os 10 atores ou atrizes com maior número de papéis em filmes do gênero Crime 
+-- e a quantidade total de papéis deles nesses filmes. 
 create view crime as
-	select pessoa.nome as ator from genero_filme
+	select pessoa.nome as ator, count(*) as atuacoes from genero_filme
 	inner join genero on genero_filme.genero = genero.id_genero
 	inner join filme on genero_filme.filme = filme.id_filme
 	inner join papel on filme.id_filme = papel.filme
 	inner join ator on papel.ator = ator.id_ator
 	inner join pessoa on ator.pessoa = pessoa.id_pessoa
-	where genero.nome = "crime"...
+	where genero.nome = "crime"
+    group by pessoa.nome
+    order by atuacoes
+    limit 10;
+    
+-- 2ª view: Para cada gênero, liste o nome do gênero e a quantidade de filmes desse gênero. 
+-- Ordene pela  quantidade de maneira crescente. 
+create view quantidade_filmes_genero as
+	select genero.nome as genero, count(genero_filme.filme) as quantidade_filmes from genero_filme
+    inner join genero on genero_filme.genero = genero.id_genero
+    inner join filme on genero_filme.filme = filme.id_filme
+    group by genero_filme.genero
+    order by quantidade_filmes desc;
 
---3ª view
+-- 3ª view: Liste o nome dos filmes em que Quentin Tarantino atuou (lembre-se que existem filmes no qual ele atuou 
+-- e é diretor, filmes em que ele é apenas diretor e filmes em que ele apenas atuou) 
+-- e o nome do papel em cada um deles.
 create view tarantino as
 	select filme.nome as filme, papel.nome as papel from filme
 	inner join papel on filme.id_filme = papel.filme
@@ -250,14 +265,29 @@ create view tarantino as
 	inner join pessoa on ator.pessoa = pessoa.id_pessoa
 	where pessoa.nome = "Quentin Tarantino";
 
---4ª view
+-- 4ª view: Sobre a trilogia do filme Se Beber Não Case, liste o nome dos filmes da trilogia, 
+-- o nome das  pessoas que trabalharam nos filmes, bem como o nome do papel que cada um desempenhou 
+-- e o tipo do papel. Ordene pelo ano de produção em ordem crescente.
 create view se_beber_nao_case as
 	select filme.nome as filme, pessoa.nome as participante, papel.nome as papel, papel.tipo as tipo_papel
-	from filme
-	inner join filme on genero_filme.filme = filme.id_filme
+	from papel
+	inner join filme on papel.filme = filme.id_filme
+    inner join ator on papel.ator = ator.id_ator
+    inner join diretor on filme.diretor = diretor.id_diretor
+	inner join pessoa on ator.pessoa = pessoa.id_pessoa
+    or ator.pessoa = pessoa.id_pessoa
+	where filme.nome like "Se beber, não case!%"
+	order by filme.ano_producao asc;
+    
+-- 5ª view: Liste os nomes dos 10 atores ou atrizes que mais participaram de diferentes gêneros de filmes.  
+-- Liste também a quantidade de gêneros diferentes que cada um participou e ordene de forma  decrescente.
+create view atores_generos_diferentes as
+	select pessoa.nome as ator, count(distinct genero.id_genero) as quantidade_genero from genero_filme
+    inner join genero on genero_filme.genero = genero.id_genero
+    inner join filme on genero_filme.filme = filme.id_filme
 	inner join papel on filme.id_filme = papel.filme
 	inner join ator on papel.ator = ator.id_ator
 	inner join pessoa on ator.pessoa = pessoa.id_pessoa
-	inner join diretor on pessoa.id_pessoa = diretor.pessoa
-	where filme.nome like "Se beber, não case!%"
-	order by filme.ano_producao asc;
+    group by papel.ator
+    order by quantidade_genero desc
+    limit 10;
