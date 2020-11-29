@@ -86,7 +86,9 @@ begin
 end $$
 
 delimiter $$
-create procedure inserir_filme(in nome_entrada varchar (200), in ano_producao_entrada int, in diretor_entrada varchar (200))
+create procedure inserir_filme(in nome_entrada varchar (200), 
+								in ano_producao_entrada int, 
+                                in diretor_entrada varchar (200))
 begin
 	set @pessoa = (select * from (select id_pessoa from pessoa where nome = diretor_entrada) as rownum);
 	set @diretor = (select * from (select id_diretor from diretor where pessoa = @pessoa) as rownum);
@@ -95,7 +97,10 @@ begin
 end $$
 
 delimiter $$
-create procedure inserir_papel(in nome_entrada varchar (200), in tipo_entrada varchar (200), in ator_entrada varchar (200), in filme_entrada varchar (200))
+create procedure inserir_papel(in nome_entrada varchar (200), 
+								in tipo_entrada varchar (200), 
+								in ator_entrada varchar (200), 
+                                in filme_entrada varchar (200))
 begin
 	set @pessoa = (select * from (select id_pessoa from pessoa where nome = ator_entrada) as rownum);
 	set @ator = (select * from (select id_ator from ator where pessoa = @pessoa) as rownum);
