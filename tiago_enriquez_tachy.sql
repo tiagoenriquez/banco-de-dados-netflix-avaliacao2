@@ -455,7 +455,7 @@ create view crime as
 	inner join pessoa on ator.pessoa = pessoa.id_pessoa
 	where genero.nome = "crime"
     group by pessoa.nome
-    order by atuacoes
+    order by atuacoes desc
     limit 10;
     
 -- 2ª view: Para cada gênero, liste o nome do gênero e a quantidade de filmes desse gênero. 
@@ -503,3 +503,13 @@ create view atores_generos_diferentes as
     group by papel.ator
     order by quantidade_genero desc
     limit 10;
+
+select * from crime;
+
+select * from quantidade_filmes_genero;
+
+select * from tarantino;
+
+select * from se_beber_nao_case;
+
+select * from atores_generos_diferentes;
