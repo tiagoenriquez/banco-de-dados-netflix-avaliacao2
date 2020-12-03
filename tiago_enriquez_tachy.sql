@@ -449,6 +449,96 @@ call atribuir_genero_a_filme("família", "Crônicas de Natal: parte dois");
 call atribuir_genero_a_filme("fantasia", "Crônicas de Natal: parte dois");
 call atribuir_genero_a_filme("aventura", "Crônicas de Natal: parte dois");
 
+call inserir_diretor("Kenneth Branagh", "M");
+call inserir_ator("Chris Pine", "M");
+call inserir_ator("Keira Knightley", "F");
+call inserir_ator("Kevin Costner", "M");
+call inserir_filme("Operação Sombra - Jack Ryan", 2013, "Kenneth Branagh");
+call inserir_papel("Jack Ryan", "", "Chris Pine", "Operação Sombra - Jack Ryan");
+call inserir_papel("Cathy Muller", "", "Keira Knightley", "Operação Sombra - Jack Ryan");
+call inserir_papel("Thomas Harper", "", "Kevin Costner", "Operação Sombra - Jack Ryan");
+call atribuir_genero_a_filme("ação", "Operação Sombra - Jack Ryan");
+
+call inserir_diretor("Simon Curtis", "M");
+call inserir_ator("Michelle Williams", "F");
+call inserir_ator("Kenneth Branagh", "M");
+call inserir_ator("Eddie Redmayne", "M");
+call inserir_filme("Sete Dias com Marilyn", 2011, "Simon Curtis");
+call inserir_papel("Marilyn Monroe", "", "Michelle Williams", "Sete Dias com Marilyn");
+call inserir_papel("Sir Laurence Olivier", "", "Kenneth Branagh", "Sete Dias com Marilyn");
+call inserir_papel("Colin Clark", "", "Eddie Redmayne", "Sete Dias com Marilyn");
+call atribuir_genero_a_filme("drama", "Sete Dias com Marilyn");
+
+call inserir_diretor("Chris Columbus", "M");
+call inserir_ator("Daniel Radcliffe", "M");
+call inserir_ator("Rupert Grint", "M");
+call inserir_ator("Emma Watson", "F");
+call inserir_filme("Harry Potter e a Câmara Secreta", 2002, "Chris Columbus");
+call inserir_papel("Harry Potter", "", "Daniel Radcliffe", "Harry Potter e a Câmara Secreta");
+call inserir_papel("Rony Weasley", "", "Rupert Grint", "Harry Potter e a Câmara Secreta");
+call inserir_papel("Hermione Granger", "", "Emma Watson", "Harry Potter e a Câmara Secreta");
+call atribuir_genero_a_filme("aventura", "Harry Potter e a Câmara Secreta");
+call atribuir_genero_a_filme("fantasia", "Harry Potter e a Câmara Secreta");
+
+call inserir_diretor("Bryan Singer", "M");
+call inserir_ator("Terence Stamp", "M");
+call inserir_ator("Tom Wilkinson", "M");
+call inserir_ator("Carice van Houten", "F");
+call inserir_filme("Operação Valquíria", 2008, "Bryan Singer");
+call inserir_papel("Ludwig Beck", "", "Terence Stamp", "Operação Valquíria");
+call inserir_papel("Friedrich Fromm", "", "Tom Wilkinson", "Operação Valquíria");
+call inserir_papel("Nina von Stauffenberg", "", "Carice van Houten", "Operação Valquíria");
+call atribuir_genero_a_filme("biografia", "Operação Valquíria");
+call atribuir_genero_a_filme("drama", "Operação Valquíria");
+call atribuir_genero_a_filme("ficção histórica", "Operação Valquíria");
+
+call inserir_diretor("Barry Sonnenfeld", "M");
+call inserir_ator("Will Smith", "M");
+call inserir_ator("Kevin Kline", "M");
+call inserir_ator("Kenneth Branagh", "M");
+call inserir_filme("As Loucas Aventuras de James West", 1999, "Barry Sonnenfeld");
+call inserir_papel("Capitão James T", "", "Will Smith", "As Loucas Aventuras de James West");
+call inserir_papel("Artemus Gordon", "", "Kevin Kline", "As Loucas Aventuras de James West");
+call inserir_papel("Dr. Airliss Loveless", "", "Kenneth Branagh", "As Loucas Aventuras de James West");
+call atribuir_genero_a_filme("faroeste", "As Loucas Aventuras de James West");
+call atribuir_genero_a_filme("comédia", "As Loucas Aventuras de James West");
+call atribuir_genero_a_filme("ação", "As Loucas Aventuras de James West");
+call atribuir_genero_a_filme("ficção científica", "As Loucas Aventuras de James West");
+
+call inserir_diretor("Hideo Nakata", "M");
+call inserir_ator("Miki Nakatani", "F");
+call inserir_ator("Hitomi Satô", "F");
+call inserir_ator("Kyoko Fukada", "F");
+call inserir_filme("O Chamado 2", 1999, "Hideo Nakata");
+call inserir_papel("Mai Takano", "", "Miki Nakatani", "O Chamado 2");
+call inserir_papel("Masami Kurahashi", "", "Hitomi Satô", "O Chamado 2");
+call inserir_papel("Kanae Sawaguchi", "", "Kyoko Fukada", "O Chamado 2");
+call atribuir_genero_a_filme("terror", "O Chamado 2");
+call atribuir_genero_a_filme("mistério", "O Chamado 2");
+call atribuir_genero_a_filme("ficção científica", "O Chamado 2");
+
+call inserir_diretor("Konstantin Khabenskiy", "M");
+call inserir_ator("Konstantin Khabenskiy", "M");
+call inserir_ator("Christopher Lambert", "M");
+call inserir_ator("Michalina Olszańska", "F");
+call inserir_filme("Sobibor", 2018, "Konstantin Khabenskiy");
+call inserir_papel("Alexander Pechersky", "", "Konstantin Khabenskiy", "Sobibor");
+call inserir_papel("Karl Frenzel", "", "Christopher Lambert", "Sobibor");
+call inserir_papel("Hanna", "", "Michalina Olszańska", "Sobibor");
+call atribuir_genero_a_filme("drama", "Sobibor");
+call atribuir_genero_a_filme("guerra", "Sobibor");
+
+call inserir_diretor("Vladimir Kott", "M");
+call inserir_ator("Konstantin Khabensky", "M");
+call inserir_ator("Andrey Merzlikin", "M");
+call inserir_ator("Viktoriya Isakova", "F");
+call inserir_filme("Pyotr Leschenko. Everything That Was", 2013, "Vladimir Kott");
+call inserir_papel("Pyotr Leshchenko", "", "Konstantin Khabensky", "Pyotr Leschenko. Everything That Was");
+call inserir_papel("Georgy Khrapak", "", "Andrey Merzlikin", "Pyotr Leschenko. Everything That Was");
+call inserir_papel("Ekaterina Zavyalova", "", "Viktoriya Isakova", "Pyotr Leschenko. Everything That Was");
+call atribuir_genero_a_filme("musical", "Pyotr Leschenko. Everything That Was");
+
+
 -- 1ª view: Liste os 10 atores ou atrizes com maior número de papéis em filmes do gênero Crime 
 -- e a quantidade total de papéis deles nesses filmes. 
 create view crime as
