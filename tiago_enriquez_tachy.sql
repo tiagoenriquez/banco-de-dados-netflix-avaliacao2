@@ -492,7 +492,6 @@ create view se_beber_nao_case as
     inner join ator on papel.ator = ator.id_ator
     inner join diretor on filme.diretor = diretor.id_diretor
 	inner join pessoa on ator.pessoa = pessoa.id_pessoa
-    or ator.pessoa = pessoa.id_pessoa
 	where filme.nome like "Se beber, não case!%"
 	order by filme.ano_producao asc;
     
