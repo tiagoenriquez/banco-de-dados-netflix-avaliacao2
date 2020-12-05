@@ -1,5 +1,3 @@
-drop database netflix;
-
 create database netflix;
 
 use netflix;
